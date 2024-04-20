@@ -1,129 +1,155 @@
-// 1-task 
+// // 1-task 
 
 
 
 
-// function uzunliklar_array(elements) {
-//     const result = {};
-//     elements.forEach(element => {
-//       result[element] = element.length;
-//     });
-//     return result;
-//   }
+// // function uzunliklar_array(elements) {
+// //     const result = {};
+// //     elements.forEach(element => {
+// //       result[element] = element.length;
+// //     });
+// //     return result;
+// //   }
   
-//   const input_array = ["text", "world", "laptop"];
-//   const output_object = uzunliklar_array(input_array);
-//   console.log(output_object);
+// //   const input_array = ["text", "world", "laptop"];
+// //   const output_object = uzunliklar_array(input_array);
+// //   console.log(output_object);
   
 
-// 2-task 
+// // 2-task 
 
 
-// function getLevel(n) {
-//     const result = [];
-//     let current = 2;
-//     for (let i = 0; i < n; i++) {
-//       result.push(current);
-//       current *= 2;
-//     }
-//     return result;
-//   }
+// // function getLevel(n) {
+// //     const result = [];
+// //     let current = 2;
+// //     for (let i = 0; i < n; i++) {
+// //       result.push(current);
+// //       current *= 2;
+// //     }
+// //     return result;
+// //   }
   
-//   const n = 4;
-//   const resultArray = getLevel(n);
-//   console.log(resultArray);
+// //   const n = 4;
+// //   const resultArray = getLevel(n);
+// //   console.log(resultArray);
 
 
 
-// 3-task 
+// // 3-task 
 
 
-// function getLevel(n) {
-//     const result = [];
-//     let current = 1;
-//     for (let i = 0; i < n; i++) {
-//       result.push(current);
-//       current *= 2;
-//     }
-//     return result;
-//   }
+// // function getLevel(n) {
+// //     const result = [];
+// //     let current = 1;
+// //     for (let i = 0; i < n; i++) {
+// //       result.push(current);
+// //       current *= 2;
+// //     }
+// //     return result;
+// //   }
   
-//   console.log("n: 4");
-//   console.log("result:", getLevel(4))
+// //   console.log("n: 4");
+// //   console.log("result:", getLevel(4))
   
-//   console.log("n: 5");
-//   console.log("result:", getLevel(5))
+// //   console.log("n: 5");
+// //   console.log("result:", getLevel(5))
  
 
-// 4-task 
+// // 4-task 
 
-// function engKamUzunSoz(sentence) {
-//     const words = sentence.split(' ');
-//     let shortestWord = words[0];
+// // function engKamUzunSoz(sentence) {
+// //     const words = sentence.split(' ');
+// //     let shortestWord = words[0];
   
-//     for (let i = 1; i < words.length; i++) {
-//       if (words[i].length < shortestWord.length) {
-//         shortestWord = words[i];
-//       }
-//     }
+// //     for (let i = 1; i < words.length; i++) {
+// //       if (words[i].length < shortestWord.length) {
+// //         shortestWord = words[i];
+// //       }
+// //     }
   
-//     return shortestWord;
-//   }
+// //     return shortestWord;
+// //   }
   
-//   const exampleSentence = "Bu bir test gapdir";
-//   console.log(engKamUzunSoz(exampleSentence)); //
+// //   const exampleSentence = "Bu bir test gapdir";
+// //   console.log(engKamUzunSoz(exampleSentence)); //
 
 
-// 4-task \
+// // 4-task \
 
 
-// function martagaKopaytir(obj, n) {
-//     const result = {};
-//     for (const key in obj) {
-//       if (obj.hasOwnProperty(key)) {
-//         result[key] = obj[key] * n;
-//       }
-//     }
-//     return result;
-//   }
+// // function martagaKopaytir(obj, n) {
+// //     const result = {};
+// //     for (const key in obj) {
+// //       if (obj.hasOwnProperty(key)) {
+// //         result[key] = obj[key] * n;
+// //       }
+// //     }
+// //     return result;
+// //   }
   
-//   const obj = {a: 2, b: 3, c: 4};
-//   const n = 3;
-//   const res = martagaKopaytir(obj, n);
-//   console.log(res); 
+// //   const obj = {a: 2, b: 3, c: 4};
+// //   const n = 3;
+// //   const res = martagaKopaytir(obj, n);
+// //   console.log(res); 
   
-  
-
-// 5-task 
-
-
-// function nechtaRaqam(string) {
-//     const regex = /\d/g; 
-//     const matches = string.match(regex)
-//     return matches ? matches.length : 0
-//   }
-  
-//   const exampleString = "Bu 234 sonli matn";
-//   console.log(nechtaRaqam(exampleString))
   
 
+// // 5-task 
 
-// const sumOfDigits = (...numbers) => {
-//     const sum = numbers.reduce((acc, num) => acc + num, 0)
-//     const sumArray = [...String(sum)].map(Number); 
-//     return sumArray;
-//   };
+
+// // function nechtaRaqam(string) {
+// //     const regex = /\d/g; 
+// //     const matches = string.match(regex)
+// //     return matches ? matches.length : 0
+// //   }
   
-//   const numbers = [1, 22, 3];
-//   console.log("Result =>", sumOfDigits(...numbers))
-
-// 18. Ixtiyoriy arrow function yarating va uning parametriga bir nechta sonlar berilsin. va o'sha sonlar yig'indisini arrayning element lari ko'rinishida ifodalang: 
-
-  
-       result=> [2,6] ozbej tilida
-
-
+// //   const exampleString = "Bu 234 sonli matn";
+// //   console.log(nechtaRaqam(exampleString))
   
 
 
+// // const sumOfDigits = (...numbers) => {
+// //     const sum = numbers.reduce((acc, num) => acc + num, 0)
+// //     const sumArray = [...String(sum)].map(Number); 
+// //     return sumArray;
+// //   };
+  
+// //   const numbers = [1, 22, 3];
+// //   console.log("Result =>", sumOfDigits(...numbers))
+
+// // 18. Ixtiyoriy arrow function yarating va uning parametriga bir nechta sonlar berilsin. va o'sha sonlar yig'indisini arrayning element lari ko'rinishida ifodalang: 
+
+  
+//     //    result=> [2,6] ozbej tilida
+
+
+
+//     - Palindrome  sonlar va ilk tushunchasi
+    
+//     11 121 313 414  
+    
+//     kiyik non va boshqa shunga o’xshash sozlar 
+    
+//     va ularni usullari :
+    
+//     toString ⇒ 
+    
+//     String ⇒
+    
+//         property flags
+        
+//         1.writable
+        
+//         qaysidur propetini ozgartirish yoki ozgartirmaslik uchun
+        
+//         2.enumarable
+        
+//         loop da ko’rinish yoki ko’rinmaslik uchun
+        
+//         3.confugrable
+        
+//         o’chirish yoki o’chirmaslik uchun qo’llaniladi 
+        
+//     -
+  
   
